@@ -1,11 +1,15 @@
 # steam_EoP.ps1
 Command execution as System
 
-For complete cleanup, at end: regln-x64.exe -d HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Valve\Steam\Apps\PrivEsc
-
 Original credits: https://twitter.com/enigma0x3/status/1159103239729471488
 
-*Additional random info*
+For complete cleanup, at the end: *regln-x64.exe -d HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Valve\Steam\Apps\PrivEsc*
+
+You can download from here:
+https://github.com/tenox7/regln/releases
+
+
+#*Additional random info*
 
 omgtehlion 1 hour ago [-]
 
