@@ -18,5 +18,3 @@ Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Steam Client Ser
 Get-Service "Steam Client Service" | Restart-Service
 Get-Service "Steam Client Service"
 Write-Host "[*] Done"
-
-
