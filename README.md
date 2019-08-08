@@ -1,5 +1,5 @@
 # steam_EoP.ps1
-Command execution as System
+Command execution as NT_Authority\System, works without admin privileges.
 
 Original credits: https://twitter.com/enigma0x3/status/1159103239729471488
 
